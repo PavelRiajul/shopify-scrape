@@ -1,0 +1,7 @@
+# Self-hosted Certificate Transparency stream (free, public Docker image)
+services:
+  certstream:
+    image: reloading01/certstream-server-rust:latest
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
